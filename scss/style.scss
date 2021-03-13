@@ -1,0 +1,91 @@
+/******************************
+variables
+******************************/
+$navPlava: #09192c; 
+$tamnoPlava: #0b193c;
+$pink: #f91257;
+$bela: white;
+$svetloSiva: #f8f8f8;
+$fontColor: #0b193c;
+$violet: #383c6e;
+$font: 16px;
+$padding: 80px 0;
+$fontFamily: 'Montserrat', sans-serif;
+$transition: .3s ease;
+/******************************
+mixins
+******************************/
+@mixin flex($justify,$align,$direction) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+/******************************
+basic styles
+******************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: $font;
+    color: $fontColor;
+    font-family: $fontFamily;
+    line-height: 1.5;
+    
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: $bela;
+    &:hover{
+        color: $pink;
+        transition: $transition;
+    }
+}
+.logo{
+    font-size: 2rem;
+    font-weight: 600;
+    span{
+        color: $pink;
+    }
+}
+/******************************
+NAV
+******************************/
+nav{
+    background-color: $navPlava;
+    padding: 30px 60px;
+    @include flex(space-between,center,row);
+    & > a{
+        @extend .logo;
+    }
+    ul{
+        @include flex(space-evenly,center ,row );
+        li{
+            margin-left: 50px;
+        }
+    }
+}
+
+
+/******************************
+Footer
+******************************/
+footer{
+    background-color: $navPlava;
+    text-align: center;
+    padding: $padding;
+    p{
+        color: $bela;
+    }
+    a{
+        margin: 0 20px;
+        font-size: 1.2rem;
+    }
+}
