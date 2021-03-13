@@ -11,5 +11,14 @@
             <img src="img/header.png" alt="">
         </div>
     </header>
-
+    <!--UNLIMITED-->
+    <section class= "unlimited container">
+    <article>
+        <h2>Unlimited Access to 100k tracks</h2>
+    </article>
+    <article>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, autem ipsum dolorum non cum omnis inventore nulla obcaecati architecto beatae ipsam labore dolores doloribus minima iure. Corporis quis ea, doloremque temporibus voluptas inventore facere quo, fugiat sed, praesentium atque mollitia ipsa voluptatem aliquam fuga unde error? Praesentium, sequi saepe. Reiciendis esse officiis, ea expedita repellat beatae quia sint dolor doloremque.</p>
+        <button>Try it now</button>
+    </article>
+    </section>
 <?php include "partials/footer.php"; ?>
