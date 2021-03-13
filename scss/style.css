@@ -30,6 +30,12 @@ h2 {
   line-height: 1.1;
 }
 
+@media (max-width: 767px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -78,6 +84,27 @@ nav {
           flex-direction: row;
 }
 
+@media (max-width: 767px) {
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px;
+  }
+}
+
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -98,6 +125,12 @@ nav ul {
 
 nav ul li {
   margin-left: 50px;
+}
+
+@media (max-width: 767px) {
+  nav ul li {
+    margin: 10px;
+  }
 }
 
 /******************************
@@ -124,10 +157,24 @@ mainHeader
           flex-direction: row;
 }
 
+@media (max-width: 767px) {
+  .mainHeader {
+    padding: 20px;
+  }
+}
+
 .mainHeader div {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 47%;
           flex: 0 0 47%;
+}
+
+@media (max-width: 767px) {
+  .mainHeader div {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
 }
 
 .mainHeader div h1 {
@@ -136,6 +183,12 @@ mainHeader
 
 .mainHeader div h1 span {
   color: #f91257;
+}
+
+@media (max-width: 767px) {
+  .mainHeader div h1 {
+    font-size: 2rem;
+  }
 }
 
 .mainHeader div img {
@@ -190,6 +243,14 @@ unlimited
           flex: 0 0 49%;
 }
 
+@media (max-width: 767px) {
+  .unlimited article {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+
 .unlimited article button {
   padding: 20px 40px;
   font-size: 1rem;
@@ -242,6 +303,14 @@ hivHeader
           flex: 0 0 30%;
 }
 
+@media (max-width: 767px) {
+  .hivHeader .container div {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+
 .hivHeader .container div i {
   color: #f91257;
   font-size: 4rem;
@@ -284,10 +353,26 @@ artists
           flex: 0 0 48%;
 }
 
+@media (max-width: 767px) {
+  .artists article:first-child h2, .concept article:first-child h2 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+
 .artists article:first-child p, .concept article:first-child p {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 48%;
           flex: 0 0 48%;
+}
+
+@media (max-width: 767px) {
+  .artists article:first-child p, .concept article:first-child p {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
 }
 
 .artists article:last-child, .concept article:last-child {
@@ -314,6 +399,14 @@ artists
       -ms-flex: 0 0 22%;
           flex: 0 0 22%;
   text-align: center;
+}
+
+@media (max-width: 767px) {
+  .artists article:last-child div, .concept article:last-child div {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 48%;
+            flex: 0 0 48%;
+  }
 }
 
 .artists article:last-child div img, .concept article:last-child div img {
@@ -352,6 +445,14 @@ subscription
   -webkit-box-flex: 0;
       -ms-flex: 0 0 48%;
           flex: 0 0 48%;
+}
+
+@media (max-width: 767px) {
+  .subscription .container div:first-child {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
 }
 
 .subscription .container div:first-child h2 {
@@ -407,6 +508,15 @@ subscription
           flex-direction: row;
 }
 
+@media (max-width: 767px) {
+  .subscription .container div:last-child {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    margin-top: 30px;
+  }
+}
+
 .subscription .container div:last-child ul {
   line-height: 3;
 }
@@ -445,8 +555,23 @@ concept
           flex: 0 0 15%;
 }
 
+@media (max-width: 767px) {
+  .concept article:last-child div {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+}
+
 .concept article:last-child div img {
   border-radius: 50%;
+}
+
+@media (max-width: 767px) {
+  .concept article:last-child div img {
+    width: 80%;
+  }
 }
 
 /******************************
