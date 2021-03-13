@@ -22,6 +22,22 @@ mixins
     align-items: $align;
     flex-direction: $direction;
 }
+@mixin btn {
+    padding: 20px 40px;
+    font-size: 1rem;
+    background-color: $pink;
+    border: none;
+    color: $bela;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 20px;
+    border-radius: 40px;
+    letter-spacing: 2px;
+    &:hover{
+        background-color: $violet;
+        transition: $transition;
+    }
+}
 /******************************
 basic styles
 ******************************/
@@ -72,7 +88,31 @@ nav{
         }
     }
 }
-
+/******************************
+mainHeader
+******************************/
+.mainHeader{
+    background-color: $tamnoPlava;
+    padding: 0 60px;
+    color: $bela;
+    @include flex(space-between,center ,row );
+    div{
+        flex: 0 0 48%;
+        h1{
+            font-size: 4rem;
+            span{
+                color: $pink;
+            }
+        }
+        img{
+            width: 100%;
+            padding: 40px 0;
+        }
+        button{
+            @include btn();
+        }
+    }
+}
 
 /******************************
 Footer
