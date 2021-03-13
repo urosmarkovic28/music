@@ -322,6 +322,103 @@ artists
 }
 
 /******************************
+subscription
+******************************/
+.subscription {
+  background: #0b193c;
+  color: white;
+  padding: 80px 0;
+}
+
+.subscription .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.subscription .container div:first-child {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 48%;
+          flex: 0 0 48%;
+}
+
+.subscription .container div:first-child h2 {
+  font-size: 2.3rem;
+}
+
+.subscription .container div:first-child h4 {
+  font-size: 1.6rem;
+  color: #f91257;
+  padding: 15px 0;
+}
+
+.subscription .container div:first-child button {
+  padding: 20px 40px;
+  font-size: 1rem;
+  background-color: #f91257;
+  border: none;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 20px;
+  border-radius: 40px;
+  letter-spacing: 2px;
+}
+
+.subscription .container div:first-child button:hover {
+  background-color: #383c6e;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.subscription .container div:last-child {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 48%;
+          flex: 0 0 48%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.subscription .container div:last-child ul {
+  line-height: 3;
+}
+
+.subscription .container div:last-child ul li::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f058";
+  margin-right: 10px;
+  color: #f91257;
+}
+
+/******************************
 concept
 ******************************/
 .concept article:last-child {
