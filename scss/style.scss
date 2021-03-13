@@ -158,6 +158,33 @@ hivHeader
     }
 }
 /******************************
+artists
+******************************/
+.artists{
+    padding: $padding;
+    article:first-child{
+        @include flex(space-between,flex-start ,row);
+        h2{
+            flex: 0 0 48%;
+        }
+        p{
+            flex: 0 0 48%;
+        }
+    }
+    article:last-child{
+        @include flex(space-between,center ,row);
+        margin-top: 50px;
+        div{
+            flex: 0 0 22%;
+            text-align: center;
+            img{
+                width: 100%;
+                border-radius: 40px;
+            }
+        }
+    }
+}
+/******************************
 Footer
 ******************************/
 footer{
